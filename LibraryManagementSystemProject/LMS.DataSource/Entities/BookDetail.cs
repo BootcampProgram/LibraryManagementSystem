@@ -18,7 +18,7 @@ namespace LMS.DataSource.Entities
     public class BookDetail
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int DetailID { get; set; }
 
         [Required]
