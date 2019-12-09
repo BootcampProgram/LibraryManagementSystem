@@ -13,24 +13,19 @@ namespace LMS.DataSource.Entities
     //$Email : ayshuu1997@gmail.com
     //$Description (if any) :
     //-----------------------------------------------------------------
-    public class Reservation
+    public class BookDetailAuthor
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ReservationId { get; set; }
+        public int Id { get; set; }
 
-        public DateTime DateReserved { get; set; }
+        [ForeignKey("DetailID")]
+        public BookDetail ParentDeatilID { get; set; }
+        public int DetailID { get; set; }
 
-        public string Shelve { get; set; }
+        [ForeignKey("AuthorId")]
+        public Author ParentAuthorId { get; set; }
+        public int AuthorId { get; set; }
 
-        public string Status { get; set; }
-
-        [ForeignKey("StudentId")]
-        public Student ParentStudent { get; set; }
-        public int StudentId { get; set; }
-
-        [ForeignKey("BookID")]
-        public BookIdentification ParentBook { get; set; }
-        public int BookID { get; set; }
     }
 }

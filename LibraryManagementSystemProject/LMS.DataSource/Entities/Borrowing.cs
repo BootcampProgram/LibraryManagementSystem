@@ -33,5 +33,10 @@ namespace LMS.DataSource.Entities
         [ForeignKey("LibrarianID")]
         public Librarian ParentLibrarian { get; set; }
         public int LibrarianID { get; set; }
+
+        [ForeignKey("BookID")]
+        public BookIdentification ParentBook { get; set; }
+        public int BookID { get; set; }
+
     }
 }
