@@ -30,10 +30,18 @@ namespace LMS.DataSource
 
         protected override void OnConfiguring(DbContextOptionsBuilder build)
         {
+<<<<<<< HEAD
 
             string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
 			
 			build.UseSqlServer(SQLConnectionString);
+=======
+            string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
+            //string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
+            //string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
+
+            build.UseSqlServer(SQLConnectionString);
+>>>>>>> parent of d495bc9... AppDbContext file changed
 
             base.OnConfiguring(build);
         }
