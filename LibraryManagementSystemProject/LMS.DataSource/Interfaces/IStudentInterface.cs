@@ -13,9 +13,9 @@ namespace LMS.DataSource.Interfaces
 
         Student GetStudentByAttribute(int ID);
 
-        ICollection<Borrowing>GetBorrowingsByStudentId(int ID);
+        ICollection<Borrowing> GetBorrowingsByStudentId(int ID);
 
-        ICollection<Payment>GetPaymentsByStudentId(int ID);
+        ICollection<Payment> GetPaymentsByStudentId(int ID);
 
         int BlockStudent(int id, Student studentObject);
 

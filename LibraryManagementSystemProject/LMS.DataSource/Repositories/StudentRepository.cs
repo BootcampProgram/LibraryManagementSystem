@@ -14,7 +14,7 @@ namespace LMS.DataSource.Repositories
         {
             appDbContext = dbContext;
         }
-
+        
         public int BlockStudent(int id, Student studentObject)
         {
             throw new NotImplementedException();
@@ -25,22 +25,22 @@ namespace LMS.DataSource.Repositories
             throw new NotImplementedException();
         }
 
-        public ICollection<Borrowing> GetBorrowingsByStudentId(int ID)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<Payment> GetPaymentsByStudentId(int ID)
-        {
-            throw new NotImplementedException();
-        }
-
         public Student GetStudentByAttribute(int ID)
         {
             throw new NotImplementedException();
         }
 
         public Student GetStudentByID(int ID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICollection<Borrowing> GetStudentID_ByBorrowings(int ID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICollection<Payment> GetStudentID_ByPayments(int ID)
         {
             throw new NotImplementedException();
         }
