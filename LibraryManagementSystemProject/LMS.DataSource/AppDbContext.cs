@@ -30,11 +30,11 @@ namespace LMS.DataSource
 
         protected override void OnConfiguring(DbContextOptionsBuilder build)
         {
-            string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
+            ///string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
             //string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
             //string SQLConnectionString = "Server=LAPTOP-5T8NA1E6\\SQLEXPRESS;Database=LMSDatabase;Trusted_Connection=true";
 
-            build.UseSqlServer(SQLConnectionString);
+            //build.UseSqlServer(SQLConnectionString);
 
             base.OnConfiguring(build);
         }
